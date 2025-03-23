@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate 3D Racing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splashScreen">
+        <h1>Gaurav Creation</h1>
+    </div>
+
+    <!-- Game Canvas -->
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Game HUD -->
+    <div id="hud">
+        <div id="speedometer">Speed: 0 km/h</div>
+        <div id="distance">Distance: 0 m</div>
+        <div id="score">Score: 0</div>
+    </div>
+
+    <!-- Mobile Controls -->
+    <div id="mobileControls">
+        <button id="leftBtn">⬅</button>
+        <button id="rightBtn">➡</button>
+        <button id="brakeBtn">🛑</button>
+        <button id="nitroBtn">🔥</button>
+    </div>
+
+    <!-- Sounds -->
+    <audio id="engineSound" loop src="assets/sounds/engine.mp3"></audio>
+    <audio id="screechSound" src="assets/sounds/screech.mp3"></audio>
+    <audio id="crashSound" src="assets/sounds/crash.mp3"></audio>
+    <audio id="backgroundMusic" loop src="assets/sounds/background.mp3"></audio>
+
+    <!-- Three.js and Cannon.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
